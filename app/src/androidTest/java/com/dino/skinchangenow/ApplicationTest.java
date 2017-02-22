@@ -1,4 +1,4 @@
-package com.dino.plugin;
+package com.dino.skinchangenow;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;
