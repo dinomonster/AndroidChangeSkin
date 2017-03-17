@@ -41,7 +41,7 @@ public class MenuLeftFragment extends Fragment implements View.OnClickListener
             @Override
             public void onClick(View v)
             {
-                com.dino.changeskin.SkinManager.getInstance().removeAnySkin();
+                SkinManager.getInstance().removeAnySkin();
             }
         });
 

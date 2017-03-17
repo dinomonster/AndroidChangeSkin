@@ -1,11 +1,12 @@
-<android.support.v4.widget.DrawerLayout
-    android:id="@+id/id_drawerLayout"
+<android.support.v4.widget.DrawerLayout android:id="@+id/id_drawerLayout"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/main_bg"
-    android:tag="skin:main_bg:background">
+    android:statusBarColor="@color/item_text_color"
+    android:tag="skin:item_text_color:statusBarColor"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <ListView
         android:id="@+id/id_listview"

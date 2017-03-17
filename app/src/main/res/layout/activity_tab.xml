@@ -13,12 +13,12 @@
         app:tabIndicatorColor="@color/colorPrimary"
         app:tabMaxWidth="600dp"
         app:tabMode="fixed"
+        app:tabTextColor="@color/tab_text_color"
         app:tabSelectedTextColor="@color/colorPrimary"
-        android:tag="skin:colorPrimary:tabSelectedTextColor"
+        android:tag="skin:colorPrimary:tabSelectedTextColor|skin:colorPrimary:tabIndicatorColor"
         android:layout_width="match_parent"
         android:layout_height="45dp"
         android:background="@color/white"
-        android:textColor="@color/font_black_1"
         android:textSize="15sp" />
 
     <View
@@ -29,7 +29,16 @@
     <android.support.v4.view.ViewPager
         android:id="@+id/tab_viewpager_f"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="0dp" />
 
+    <ImageView
+        android:id="@+id/image"
+        android:layout_gravity="center"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_centerVertical="true"
+        app:srcCompat="@drawable/icon"
+        android:tag="skin:icon:srcCompat"
+        android:layout_centerHorizontal="true" />
 
 </LinearLayout>

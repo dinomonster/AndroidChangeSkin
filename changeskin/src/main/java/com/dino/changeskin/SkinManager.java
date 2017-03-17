@@ -146,6 +146,11 @@ public class SkinManager
         return mResourceManager;
     }
 
+    public List<Activity> getActivity()
+    {
+        return mActivities;
+    }
+
 
     /**
      * 应用内换肤，传入资源区别的后缀

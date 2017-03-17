@@ -13,6 +13,7 @@ import com.dino.changeskin.utils.L;
 public class ResourceManager
 {
     private static final String DEFTYPE_DRAWABLE = "drawable";
+    private static final String DEFTYPE_MIPMAP = "mipmap";
     private static final String DEFTYPE_COLOR = "color";
     private Resources mResources;
     private String mPluginPackageName;
@@ -39,6 +40,20 @@ public class ResourceManager
             name = appendSuffix(name);
             L.e("name = " + name + " , " + mPluginPackageName);
             return mResources.getDrawable(mResources.getIdentifier(name, DEFTYPE_DRAWABLE, mPluginPackageName));
+        } catch (Resources.NotFoundException e)
+        {
+            e.printStackTrace();
+            return null;
+        }
+    }
+
+    public Drawable getMipmapByName(String name)
+    {
+        try
+        {
+            name = appendSuffix(name);
+            L.e("name = " + name + " , " + mPluginPackageName);
+            return mResources.getDrawable(mResources.getIdentifier(name, DEFTYPE_MIPMAP, mPluginPackageName));
         } catch (Resources.NotFoundException e)
         {
             e.printStackTrace();
